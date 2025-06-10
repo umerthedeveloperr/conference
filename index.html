@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conference Management System</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">Conference Management</a>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="#" onclick="showPage('home')">Home</a></li>
+                <li class="nav-item"><a href="#" onclick="showPage('about')">About</a></li>
+                <li class="nav-item"><a href="#" onclick="showPage('contact')">Contact</a></li>
+                <li class="nav-item"><a href="#" onclick="showPage('tickets')" class="btn-ticket btn-glow">Buy Tickets</a></li>
+                <li class="nav-item"><a href="#" onclick="showPage('login')" class="btn-login">Login</a></li>
+            </ul>
+            <div class="hamburger" onclick="toggleMenu()">
+                <span></span>   
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home Page -->
+    <section id="home" class="page-section active">
+  <div class="hero">
+    <div class="glow-label">CS 1st Semester Project</div>
+    <div class="hero-content">
+      <h1 class="hero-title">Welcome to the Conference Management System</h1>
+      <p class="hero-subtitle">Built for tech lovers and student innovation.</p>
+      <div class="hero-buttons">
+        <button class="btn btn-primary" onclick="showPage('tickets')">Get Tickets</button>
+        <button class="btn btn-secondary" onclick="showPage('about')">Learn More</button>
+      </div>
+    </div>
+    <div class="floating-elements">
+      <div class="float-element"></div>
+      <div class="float-element"></div>
+      <div class="float-element"></div>
+    </div>
+  </div>
+
+  <div class="container">
+    <section class="features">
+      <h2 class="section-title">Why You Should Choose Us?</h2>
+      <div class="features-grid">
+        <div class="feature-card">
+          <i class="fas fa-users feature-icon"></i>
+          <h3>Expert Speakers</h3>
+          <p>Learn from pioneers in AI, Blockchain, and Cybersecurity.</p>
+        </div>
+        <div class="feature-card">
+          <i class="fas fa-network-wired feature-icon"></i>
+          <h3>Networking</h3>
+          <p>Connect with professionals, innovators, and mentors.</p>
+        </div>
+        <div class="feature-card">
+          <i class="fas fa-lightbulb feature-icon"></i>
+          <h3>Innovation</h3>
+          <p>Discover tech trends that are reshaping the future.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="speakers">
+      <h2 class="section-title">Meet Our Speakers</h2>
+      <div class="speakers-grid">
+        <div class="speaker-card">
+          <h3>M Huzaifa Imran</h3>
+          <p>AI Research Director</p>
+          <p>Specializes in machine learning and real-world AI systems.</p>
+        </div>
+        <div class="speaker-card">
+          <h3>Hammad Khan</h3>
+          <p>Blockchain Architect</p>
+          <p>Designing decentralized systems for financial futures.</p>
+        </div>
+        <div class="speaker-card">
+          <h3>Khola Aziz</h3>
+          <p>Cybersecurity Expert</p>
+          <p>Defending global networks with cutting-edge techniques.</p>
+        </div>
+      </div>
+    </section>
+
+
+            <section class="schedule">
+                <h2 class="section-title">Conference Schedule</h2>
+                <div class="schedule-timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-time">9:00 AM</div>
+                        <div class="timeline-content">
+                            <h3>Registration & Welcome Coffee</h3>
+                            <p>Check-in and networking session</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-time">10:00 AM</div>
+                        <div class="timeline-content">
+                            <h3>Keynote: The Future of AI</h3>
+                            <p>Featuring: Huzaifa Imran</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-time">11:30 AM</div>
+                        <div class="timeline-content">
+                            <h3>Panel: Blockchain Revolution</h3>
+                            <p>Industry experts discuss blockchain applications</p>
+                            <p>Featuring: Hammad Khan</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-time">2:00 PM</div>
+                        <div class="timeline-content">
+                            <h3>Workshop: Cybersecurity Best Practices</h3>
+                            <p>Interactive session with Emily Rodriguez</p>
+                            <p>Featuring: Khola Aziz</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </section>
+
+    <!-- About Page -->
+    <section id="about" class="page-section">
+        <div class="container">
+            <div class="about-hero">
+                <h1 class="page-title">About Conference Mangement System</h1>
+                <p class="page-subtitle">Bringing together the <span class="highlight">brightest minds</span> in technology through our system</p>
+            </div>
+
+            <div class="about-content">
+                <div class="about-section">
+                    <h2>Our Mission</h2>
+                    <p>This System is dedicated to fostering innovation, collaboration, and knowledge sharing in the technology industry. We bring together industry leaders, researchers, and enthusiasts to explore the latest trends and shape the future of technology.</p>
+                </div>
+
+                <div class="about-section">
+                    <h2>Conference Details</h2>
+                    <div class="details-grid">
+                        <div class="detail-item">
+                            <i class="fas fa-calendar-alt"></i>
+                            <h3>Date</h3>
+                            <p>July 15-17, 2025</p>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <h3>Location</h3>
+                            <p>Civic Center, Karachi</p>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-users"></i>
+                            <h3>Attendees</h3>
+                            <p>2000+ Professionals</p>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-microphone"></i>
+                            <h3>Speakers</h3>
+                            <p>50+ Industry Experts</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="about-section">
+                    <h2>What to Expect</h2>
+                    <div class="expectations">
+                        <div class="expectation-item">
+                            <h3>Cutting-edge Content</h3>
+                            <p>Stay ahead of the curve with insights into emerging technologies and industry trends.</p>
+                        </div>
+                        <div class="expectation-item">
+                            <h3>Networking Opportunities</h3>
+                            <p>Connect with peers, potential partners, and industry leaders in structured networking sessions.</p>
+                        </div>
+                        <div class="expectation-item">
+                            <h3>Hands-on Workshops</h3>
+                            <p>Participate in interactive workshops and gain practical skills you can apply immediately.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Page -->
+    <section id="contact" class="page-section">
+        <div class="container">
+            <div class="contact-hero">
+                <h1 class="page-title">Contact Us</h1>
+                <p class="page-subtitle"><span class="highlight">Get in touch</span> with our team</p>
+            </div>
+
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <h3>Email</h3>
+                        <p>Conference.system@gmail.com</p>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <h3>Phone</h3>
+                        <p>+9231-1234567</p>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <h3>Address</h3>
+                        <p>Street 15<br>Civic Center, Karachi</p>
+                    </div>
+                </div>
+
+                <form class="contact-form">
+                    <div class="form-group">
+                        <input type="text" placeholder="Full Name" required>
+                        <input type="email" placeholder="Email Address" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" placeholder="Subject" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea placeholder="Your Message" rows="6" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tickets Page -->
+    <section id="tickets" class="page-section">
+        <div class="container">
+            <div class="tickets-hero">
+                <h1 class="page-title">Choose Your Ticket</h1>
+                <p class="page-subtitle">Select the perfect package for your needs</p>
+            </div>
+
+            <div class="pricing-cards">
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3>Early Bird</h3>
+                        <div class="price">1500pkr</div>
+                        <p>Limited Time Offer</p>
+                    </div>
+                    <ul class="pricing-features">
+                        <li><i class="fas fa-check"></i> All conference sessions</li>
+                        <li><i class="fas fa-check"></i> Welcome reception</li>
+                        <li><i class="fas fa-check"></i> Conference materials</li>
+                        <li><i class="fas fa-check"></i> Lunch included</li>
+                    </ul>
+                    <button class="btn btn-primary pricing-btn">Select Plan</button>
+                </div>
+
+                <div class="pricing-card featured">
+                    <div class="pricing-header">
+                        <h3>Premium</h3>
+                        <div class="price">2500pkr</div>
+                        <p>Most Popular</p>
+                    </div>
+                    <ul class="pricing-features">
+                        <li><i class="fas fa-check"></i> All Early Bird features</li>
+                        <li><i class="fas fa-check"></i> VIP networking session</li>
+                        <li><i class="fas fa-check"></i> Workshop access</li>
+                        <li><i class="fas fa-check"></i> Premium seating</li>
+                        <li><i class="fas fa-check"></i> Certificate of attendance</li>
+                    </ul>
+                    <button class="btn btn-primary pricing-btn">Select Plan</button>
+                </div>
+
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3>VIP</h3>
+                        <div class="price">4500pkr</div>
+                        <p>Exclusive Experience</p>
+                    </div>
+                    <ul class="pricing-features">
+                        <li><i class="fas fa-check"></i> All Premium features</li>
+                        <li><i class="fas fa-check"></i> Meet & greet with speakers</li>
+                        <li><i class="fas fa-check"></i> Private dinner invitation</li>
+                        <li><i class="fas fa-check"></i> Exclusive goodie bag</li>
+                        <li><i class="fas fa-check"></i> Priority support</li>
+                    </ul>
+                    <button class="btn btn-primary pricing-btn">Select Plan</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Login Page -->
+    <section id="login" class="page-section">
+        <div class="login-container">
+            <div class="login-box">
+                <h2 class="login-title">Login to Your Account</h2>
+                <form class="login-form">
+                    <div class="form-group">
+                        <i class="fas fa-envelope"></i>
+                        <input type="email" placeholder="Email Address" required>
+                    </div>
+                    <div class="form-group">
+                        <i class="fas fa-lock"></i>
+                        <input type="password" placeholder="Password" required>
+                    </div>
+                    <div class="form-options">
+                        <label class="checkbox">
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                            Remember me
+                        </label>
+                        <a href="#" class="forgot-password">Forgot Password?</a>
+                    </div>
+                    <button type="submit" class="btn btn-primary login-btn">Login</button>
+                </form>
+                <div class="login-footer">
+                    <p>Don't have an account? <a href="#" onclick="showSignup()">Sign up here</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script>
+        
+        function showPage(pageId) {
+            // Hide all pages
+            const pages = document.querySelectorAll('.page-section');
+            pages.forEach(page => page.classList.remove('active'));
+            
+            
+            // Show selected page
+            page = document.getElementById(pageId);
+            if (pageId == "login"){
+                page.classList.add('flex')
+                console.log("abba")
+            }
+            else{
+                document.getElementById('login').classList.remove("flex")
+                page.classList.add('active')
+            }
+
+            
+            // Close mobile menu if open
+            const navMenu = document.querySelector('.nav-menu');
+            navMenu.classList.remove('active');
+        }
+
+        function toggleMenu() {
+            const navMenu = document.querySelector('.nav-menu');
+            const hamburger = document.querySelector('.hamburger');
+            navMenu.classList.toggle('active');
+            hamburger.classList.toggle('active');
+        }
+
+        function showSignup() {
+            alert('Signup functionality would be implemented with backend integration');
+        }
+
+        // Add scroll effect to navbar
+        window.addEventListener('scroll', () => {
+            const navbar = document.querySelector('.navbar');
+            if (window.scrollY > 50) {
+                navbar.style.background = 'rgba(102, 126, 234, 0.95)';
+            } else {
+                navbar.style.background = 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)';
+            }
+        });
+
+        // Form submissions
+        document.querySelector('.contact-form').addEventListener('submit', (e) => {
+            e.preventDefault();
+            alert('Message sent successfully! We will get back to you soon.');
+        });
+
+        document.querySelector('.login-form').addEventListener('submit', (e) => {
+            e.preventDefault();
+            alert('Login functionality would be implemented with backend integration');
+        });
+
+        // Pricing button clicks
+        document.querySelectorAll('.pricing-btn').forEach(btn => {
+            btn.addEventListener('click', () => {
+                alert('Ticket purchase functionality would be implemented with payment gateway integration');
+            });
+        });
+    </script>
